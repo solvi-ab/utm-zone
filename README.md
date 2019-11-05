@@ -8,6 +8,8 @@ Note that this module does not do any reprojection of coordinates, you might wan
 
 For a rough overview of how the UTM zone is calculated, have a look at [https://gis.stackexchange.com/a/190209/467](https://gis.stackexchange.com/a/190209/467).
 
+You might also be interested in the [Python version of utm-zone](https://pypi.org/project/utm-zone/).
+
 ## API
 
 ### `epsg(geojson)`
