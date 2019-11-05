@@ -1,6 +1,6 @@
 {
   "name": "utm-zone",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Find the UTM zone for your GeoJSON.",
   "main": "dist/utm-zone.cjs.js",
   "scripts": {
