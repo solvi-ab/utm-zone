@@ -2,11 +2,12 @@
   "name": "utm-zone",
   "version": "1.0.0",
   "description": "Find the UTM zone for your GeoJSON.",
-  "main": "index.js",
+  "main": "dist/utm-zone.cjs.js",
   "scripts": {
     "build": "rollup -c",
     "test": "ava",
-    "prepublish": "npm t && npm run build"
+    "prepublishOnly": "npm t && npm run build",
+    "prepare": "rollup -c rollup.cjs.config.js"
   },
   "keywords": [
     "utm",
@@ -17,13 +18,19 @@
   "author": "Per Liedman <per@liedman.net>",
   "license": "ISC",
   "homepage": "https://github.com/perliedman/utm-zone",
-  "repository": {"url": "https://github.com/perliedman/utm-zone.git"},
-  "devDependencies": {
-    "@rollup/plugin-buble": "^0.20.0",
-    "ava": "^2.4.0",
+  "repository": {
+    "url": "https://github.com/perliedman/utm-zone.git"
+  },
+  "dependencies": {
     "rollup": "^1.26.3"
   },
+  "devDependencies": {
+    "@rollup/plugin-buble": "^0.20.0",
+    "ava": "^2.4.0"
+  },
   "ava": {
-    "require": ["esm"]
+    "require": [
+      "esm"
+    ]
   }
 }
